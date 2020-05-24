@@ -1,0 +1,279 @@
+:root {
+  --pink: #fdd;
+  --darkest-pink: #ff9191;
+  --dark-pink: #ffc4c4;
+  --blue: #c4ffff;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Georgia", san-serif;
+  line-height: 1.5;
+  color: #111;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 6px dotted var(--dark-pink);
+  width: 100%;
+}
+
+#header-img {
+  max-width: 80px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+#nav-bar {
+  margin-left: auto;
+}
+
+.nav-link {
+  padding: 10px;
+  border: 3px solid transparent;
+}
+
+#nav-bar ul {
+/*   width: 42vw; */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+#nav-bar li {
+  display: block;
+  padding: 0.5rem;
+}
+
+#nav-bar a {
+  color: #111;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+#nav-bar a:hover {
+  border: 3px solid var(--dark-pink);
+  border-radius: 0.2rem;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+#title {
+  font-family: "Helvetica Neue", san-serif;
+  font-size: 2.5rem;
+  word-wrap: break-word;
+  margin-bottom: 0;
+  margin-top: 7rem;
+}
+
+#description {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.form-container{
+  width: 100%;
+  background: var(--blue);
+  margin-top: 3rem;
+}
+
+#form {
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+#email {
+  max-width: 250px;
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 2rem;
+  font-size: 0.7rem;
+  border-radius: 0.2rem;
+  border: solid 3px var(--dark-pink);;
+}
+
+#hero input[type="submit"] {
+  width: 28%;
+  height: 30px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 0.2rem;
+  border: none;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  transition-duration: 0.4s;
+}
+
+#form .button:hover {
+  background-color: var(--dark-pink);
+  border: none;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#features {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+#action {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+#video {
+  max-width: 560px;
+  width: 100%;
+  border: 10px solid var(--dark-pink);
+  border-radius: 0.2rem;
+}
+
+#pricing {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 3px solid var(--blue);
+  border-radius: 0.2rem;
+  padding: 0 1rem 1rem 1rem;
+}
+
+.product-name {
+  padding: 1rem;
+  background-color: var(--blue);
+  width: 100%;
+  text-transform: uppercase;
+  font-family: "Helvetica Neue", san-serif;
+  font-weight: 600;
+}
+
+.product h2 {
+  font-family: "Helvetica Neue", san-serif;
+}
+
+.product ol {
+  padding: 0;
+  margin: 0;
+}
+
+.product li {
+  list-style: none;
+  padding: 0.25rem;
+  font-weight: 300;
+}
+
+.product button {
+  max-width: 130px;
+  width: 100%;
+  height: 40px;
+  margin-top: 1.5rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  background-color: var(--dark-pink);
+  cursor: pointer;
+  border: 0;
+  border-radius: 0.2rem;
+  transition-duration: 0.4s;
+}
+
+.product button:hover {
+  background: var(--darkest-pink);
+}
+
+footer {
+  background-color: var(--blue);
+  margin-top: 4rem;
+  position: relative;
+  bottom: 0;
+  padding: 10px;
+}
+
+footer ul {
+  list-style: none;
+  text-align: right;
+  margin: 0;
+  margin-top: 0.75rem;
+}
+
+footer li {
+  display: inline;
+  padding: 0px 6.5px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #111;
+  transition-duration: 0.4s;
+}
+
+footer a:hover {
+  background: #fff;
+  color: var(--darkest-pink);
+}
+
+.footer-link {
+  padding: 5px;
+  border: 3px solid transparent;
+  border-radius: 0.2rem;
+}
+
+footer span {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 15px;
+  margin-top: 0.5rem;
+  font-family: "Helvetica Neue", san-serif;
+  color: #333;
+  font-weight: 550;
+}
+
+@media (min-width: 480px) {
+  #nav-bar li {
+    display: inline;
+    padding: 0;
+    padding: 1rem;
+  }
+
+  #navbar ul {
+    padding: 0;
+  }
+
+  #header {
+  position: fixed;
+  }
+
+  #title {
+  font-size: 3rem;
+  }
+}
